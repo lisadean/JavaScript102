@@ -162,9 +162,54 @@ function ticTacToe(board) {
     console.log(result);
 }
 
-function matrixMultiply(matrix) {
-    //
+function ticTacToe2(board) {
+    var result = null;
+
+    // check rows
+    for (var r=0; r<board.length; r++) {
+        var row = board[r];
+
+        var firstSquare = board[r][0];
+        for (var c=0; c<row.length; c++) {
+            var currentSquare = board[r][c];
+            if (firstSquare != currentSquare) {
+                result = null;
+            } else {
+                result = firstSquare;
+            }
+        }
+    }
+
+    // check columns
+    for (var c=0; c<board[0].length; c++) {
+        
+    }
+
+
+    console.log(result);
 }
+
+// function matrixMultiply(matrix) {
+//     //
+// }
+
+// function matrixAdd(matrix) {
+//     //[[1, 3], [2, 4]]
+//     var results = [];
+
+//     for (var i=0; i<matrix.length; i++) {
+//         var currentResults = [];
+//         var currentMatrix = matrix[i];
+//         for (var j=0; j<currentMatrix.length; j++) {
+//             currentResults.push(currentMatrix[i][j] + currentMatrix[i+1][j]);
+//         }
+
+//         results.push(currentResults);
+
+//     }
+
+//     console.log(results);
+// }
 
 
 console.log('printNumbers');
@@ -187,7 +232,9 @@ factors(66);
 
 console.log('cipher');
 cipher('Genius without education is like silver in the mine');
+cipher('abcd');
 
+// This wasn't what the problem asked for. Redo it
 console.log('cipher2');
 cipher('Genius without education is like silver in the mine', 14);
 
@@ -213,8 +260,16 @@ ticTacToe([
     [null, 'X', 'X']
     ]);
 
-console.log('matrixMultiply');
-matrixMultiply([
-    [2, 4], [3, 4]], 
-    [[5, 2], [3, 1]
-])
+// console.log('matrixMultiply');
+// matrixMultiply([
+//     [2, 4], [3, 4]], 
+//     [[5, 2], [3, 1]
+// ])
+
+// console.log('matrixAdd');
+// matrixAdd([
+//     [[1, 3], 
+//     [2, 4]], 
+//     [[5, 2], 
+//     [1, 0]]
+// ])
