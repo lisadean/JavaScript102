@@ -162,6 +162,10 @@ function ticTacToe(board) {
     console.log(result);
 }
 
+function matrixMultiply(matrix) {
+    //
+}
+
 
 console.log('printNumbers');
 printNumbers(1, 10);
@@ -208,3 +212,9 @@ ticTacToe([
     ['O', 'O', null],
     [null, 'X', 'X']
     ]);
+
+console.log('matrixMultiply');
+matrixMultiply([
+    [2, 4], [3, 4]], 
+    [[5, 2], [3, 1]
+])
