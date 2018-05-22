@@ -1,8 +1,10 @@
 # JavaScript102 exercises
+
 ## Print Numbers
 
 Write a function printNumbers which is given a start number and an end number. It will print the numbers from one to the other, one per line:
-```
+
+```javascript
 > printNumbers(1, 10)
 1
 2
@@ -15,12 +17,14 @@ Write a function printNumbers which is given a start number and an end number. I
 9
 10
 ```
+
 Write two versions of the above function. One using a while loop and the other using a for loop.
 
 ## Print a Square
 
 Write a function printSquare which is given a size and prints a square of that size using asterisks.
-```
+
+```javascript
 > printSquare(5)
 *****
 *****
@@ -32,7 +36,8 @@ Write a function printSquare which is given a size and prints a square of that s
 ## Print a box
 
 Write function printBox which is given a width and height and prints a hollow box of those given dimensions.
-```
+
+```javascript
 > printBox(6, 4)
 ******
 *    *
@@ -43,7 +48,8 @@ Write function printBox which is given a width and height and prints a hollow bo
 ## Print a Banner
 
 Write a function printBanner which is given some text and prints a banner with a border surrounding the text. The border has to stretch to the length of the text.
-```
+
+```javascript
 > printBanner('Welcome to DigitalCrafts')
 ****************************
 * Welcome to DigitalCrafts *
@@ -57,7 +63,8 @@ Write a function factors which is given a number and returns an array containing
 ## Caesar Cipher
 
 Write a function cipher which is given a string, an offset, and returns the Caesar cipher of the string.
-```
+
+```javascript
 > cipher('Genius without education is like silver in the mine')
 'Travhf jvgubhg rqhpngvba vf yvxr fvyire va gur zvar'
 ```
@@ -65,7 +72,8 @@ Write a function cipher which is given a string, an offset, and returns the Caes
 ## Caesar Cipher 2
 
 Write a function decipher which is given a string, an offset, and returns the original message.
-```
+
+```javascript
 > decipher('Travhf jvgubhg rqhpngvba vf yvxr fvyire va gur zvar', 13)
 'Genius without education is like silver in the mine'
 ```
@@ -73,7 +81,8 @@ Write a function decipher which is given a string, an offset, and returns the or
 ## Leetspeak
 
 Write a function leetspeak which is given a string, and returns the leetspeak equivalent of the string. To convert text to its leetspeak version, make the following substitutions:
-```
+
+```javascript
 A => 4
 E => 3
 G => 6
@@ -88,7 +97,8 @@ l337
 ## Long-long Vowels
 
 Write a function, which is given a string, return the result of extending any long vowels to the length of 5.
-```
+
+```javascript
 > longLongVowels('Good')
 'Goooood'
 > longLongVowels('Cheese')
@@ -100,7 +110,8 @@ Write a function, which is given a string, return the result of extending any lo
 ## Sum the numbers
 
 Write a function sumNumbers which is given an array of numbers and returns the sum of the numbers.
-```
+
+```javascript
 > sumNumbers([1, 4, 8])
 13
 ```
@@ -108,7 +119,8 @@ Write a function sumNumbers which is given an array of numbers and returns the s
 ## Just the positives
 
 Write a function positiveNumbers which is given an array of numbers and returns a new array containing only the positive numbers within the given array.
-```
+
+```javascript
 > positiveNumbers([1, -3, 5, -3, 0])
 [1, 5, 0]
 > positiveNumbers([1, 2, 3])
@@ -120,7 +132,8 @@ Write a function positiveNumbers which is given an array of numbers and returns 
 ## Matrix Addition
 
 Write a function matrixAdd which is given two two-dimensional arrays, and returns a new two-dimensional array containing their matrix sum.
-```
+
+```javascript
 > matrixAdd([[[1, 3], [2, 4]], [[5, 2], [1, 0]]])
 [ [ 6, 5 ], [ 3, 4 ] ]
 ```
@@ -130,7 +143,8 @@ Write a function matrixAdd which is given two two-dimensional arrays, and return
 Write a function matrixMultiply which is given two two-dimensional arrays - you can assume the matricies are of size 2x2. It will return the result of matrix multiplication between the two given matricies.
 
 https://www.khanacademy.org/math/precalculus/precalc-matrices/multiplying-matrices-by-matrices/v/matrix-multiplication-intro
-```
+
+```javascript
 > matrixMultiply([[2, 4], [3, 4]], [[5, 2], [3, 1]])
 [ [22,  8], [27, 10] ]
 ```
@@ -138,7 +152,8 @@ https://www.khanacademy.org/math/precalculus/precalc-matrices/multiplying-matric
 ## Rock Paper Scissors
 
 Write a function rockPaperScissors which takes the throw of player 1 and the throw of player 2. A throw can have the values of 'rock', 'paper', or 'scissors'. It will return 'player 1' if player 1 wins, 'player 2' if player 2 wins, and 'draw' if there is no winner.
-```
+
+```javascript
 > rockPaperScissors('rock', 'scissors')
 'player 1'
 > rockPaperScissors('rock', 'paper')
@@ -154,7 +169,8 @@ Write a function ticTacToe which takes a two-dimensional array of size 3x3. Each
 * returning 'O' if O makes a row
 * returning 'X' if X makes a row
 * return null if neither makes a row
-```
+
+```javascript
 > ticTacToe([
   ['O', 'O', 'O'],
   ['X', null, 'X'],
@@ -173,4 +189,4 @@ Write a function ticTacToe which takes a two-dimensional array of size 3x3. Each
   [null, 'X', 'X']
   ])
 null
-```\
+```
